@@ -10,6 +10,12 @@ const io = new Server(server);
 
 app.use(cors());
 
+app.use(
+  cors({
+    origin: "https://co-create-frontend.vercel.app/",
+  })
+);
+
 app.get("/", (req, res) => {
   res.send("This is realtime whiteboard sharing server");
 });
