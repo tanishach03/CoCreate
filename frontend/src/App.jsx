@@ -6,7 +6,8 @@ import Forms from "./components/forms";
 import RoomPage from "./pages/roomPage";
 import "./App.css";
 
-const server = "https://co-create-tan.vercel.app/";
+const server = "http://localhost:5000";
+
 const connectionOptions = {
   "force new connection": true,
   reconnectionAttempts: "Infinity",
